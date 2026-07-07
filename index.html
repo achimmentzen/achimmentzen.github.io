@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Achim Mentzen – 7 Tage nackt. Ohne Rückzug.</title>
+<meta name="description" content="Achim Mentzen, 64, Busfahrer aus Albbruck. 7 Tage nackt, 24/7 sichtbar, unwiderruflich verpflichtet. Living Sculpture. Transparenzprojekt.">
+<meta name="author" content="Achim Mentzen">
+<meta property="og:title" content="Achim Mentzen – 7 Tage nackt. Ohne Rückzug.">
+<meta property="og:description" content="7 Tage nackt. 24/7 sichtbar. Schlafen, Essen, Duschen – alles öffentlich. Unwiderruflich. Kostenlos für Galerien.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;background:#060606;color:#ede8dc;line-height:1.8}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:99;display:flex;justify-content:space-between;align-items:center;padding:.8rem 2rem;background:rgba(6,6,6,.97);border-bottom:1px solid #1a1a1a}
+.nav-name{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:#888;text-decoration:none}
+.nav-links a{color:#666;text-decoration:none;font-size:11px;letter-spacing:.15em;text-transform:uppercase;margin-left:1.5rem;transition:color .2s}
+.nav-links a:hover{color:#c8a96e}
+
+#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:8rem 2rem 5rem;max-width:1000px;margin:0 auto}
+.eyebrow{font-size:10px;letter-spacing:.4em;text-transform:uppercase;color:#c8a96e;margin-bottom:2rem}
+h1{font-size:clamp(3.5rem,9vw,8rem);font-weight:200;line-height:.95;letter-spacing:-.03em;margin-bottom:2rem}
+h1 em{font-style:italic;color:#c8a96e}
+.hero-sub{font-size:clamp(1rem,2vw,1.3rem);color:#888;max-width:600px;margin-bottom:3rem;line-height:1.9}
+.cta{display:inline-block;padding:14px 32px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;transition:all .25s;margin-right:12px;margin-top:8px}
+.cta-primary{background:#c8a96e;color:#000}
+.cta-primary:hover{background:#e0c07a}
+.cta-secondary{border:1px solid #333;color:#666}
+.cta-secondary:hover{border-color:#ede8dc;color:#ede8dc}
+
+.verpflichtung{background:#0d0d0d;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;padding:80px 2rem}
+.verpflichtung-inner{max-width:860px;margin:0 auto}
+.verpflichtung-inner blockquote{font-size:clamp(1.3rem,3.5vw,2.2rem);font-weight:200;line-height:1.5;color:#ede8dc;border-left:3px solid #c8a96e;padding-left:2rem;margin-bottom:2rem}
+.verpflichtung-inner .signatur{font-size:13px;color:#555;padding-left:2rem;font-style:italic}
+
+section{max-width:1000px;margin:0 auto;padding:80px 2rem;border-top:1px solid #131313}
+h2{font-size:clamp(2rem,5vw,3.8rem);font-weight:200;line-height:1;letter-spacing:-.02em;margin-bottom:1.5rem}
+h2 em{font-style:italic;color:#c8a96e}
+h3{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#c8a96e;margin:2.5rem 0 .75rem}
+p{color:#aaa;max-width:640px;margin-bottom:1rem}
+p strong{color:#ede8dc}
+
+.statement-block{background:#080808;border:1px solid #1a1a1a;padding:3rem;margin:2.5rem 0}
+.statement-block p{font-size:clamp(1rem,2.5vw,1.3rem);color:#ccc;max-width:100%;line-height:1.9;margin-bottom:1.5rem}
+.statement-block p:last-child{margin:0}
+.statement-block p strong{color:#fff;font-size:1.1em}
+
+.rhythm{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:#1a1a1a;margin:2.5rem 0}
+.rhythm-cell{background:#0a0a0a;padding:2rem 1.5rem}
+.rhythm-time{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:#c8a96e;margin-bottom:.75rem}
+.rhythm-title{font-size:1.1rem;font-weight:300;color:#ede8dc;margin-bottom:.75rem}
+.rhythm-cell p{font-size:13px;color:#666;max-width:100%;margin:0}
+
+.daten-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:#1a1a1a;margin:2rem 0}
+.daten-cell{background:#0a0a0a;padding:1.5rem}
+.daten-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#555;margin-bottom:.5rem}
+.daten-value{font-size:15px;color:#ede8dc;line-height:1.6}
+.daten-value a{color:#c8a96e;text-decoration:none}
+.daten-value a:hover{text-decoration:underline}
+
+.num-row{display:flex;flex-wrap:wrap;gap:3rem;margin:2.5rem 0}
+.num-item .num{font-size:4rem;font-weight:200;color:#c8a96e;line-height:1}
+.num-item .unit{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:#555;margin-bottom:.5rem}
+.num-item p{font-size:13px;color:#666;max-width:180px;margin-top:.5rem}
+
+.archiv-box{border:1px solid #1a1a1a;padding:2rem;margin:2rem 0;font-family:monospace;font-size:12px;color:#555;line-height:2}
+.archiv-box span{color:#c8a96e}
+
+#kontakt{background:#050505;border-top:1px solid #1a1a1a;padding:90px 2rem;text-align:center}
+#kontakt h2{margin-bottom:1rem}
+#kontakt p{color:#666;max-width:100%;margin:.5rem auto}
+#kontakt a{color:#c8a96e;text-decoration:none;font-size:1.1rem;display:block;margin:.4rem 0}
+#kontakt a:hover{text-decoration:underline}
+.kontakt-name{font-size:clamp(1.2rem,3vw,1.8rem);color:#ede8dc;margin-bottom:2rem}
+
+footer{padding:2rem;text-align:center;font-size:11px;color:#333;border-top:1px solid #0f0f0f}
+footer a{color:#444;text-decoration:none}
+footer a:hover{color:#c8a96e}
+
+@media(max-width:600px){.nav-links{display:none}h1{font-size:3rem}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#hero" class="nav-name">Achim Mentzen</a>
+  <div class="nav-links">
+    <a href="#statement">Statement</a>
+    <a href="#konzept">Konzept</a>
+    <a href="#daten">Alle Daten</a>
+    <a href="#verpflichtung">Verpflichtung</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+</nav>
+
+<div id="hero">
+  <div class="eyebrow">Transparenzprojekt · Living Sculpture · 2026</div>
+  <h1>7 Tage.<br><em>Nackt.</em><br>Ohne<br>Rückzug.</h1>
+  <p class="hero-sub">Achim Mentzen, 64, Busfahrer aus Albbruck. Sieben Tage als lebende Skulptur in einer Galerie. Nackt, 24 Stunden täglich sichtbar. Schlafen, Essen, Duschen – alles öffentlich. Unwiderruflich verpflichtet. Kostenlos für die Institution.</p>
+  <div>
+    <a href="#kontakt" class="cta cta-primary">Galerie anfragen</a>
+    <a href="#konzept" class="cta cta-secondary">Konzept lesen</a>
+  </div>
+</div>
+
+<!-- VERPFLICHTUNG -->
+<div class="verpflichtung" id="verpflichtung">
+  <div class="verpflichtung-inner">
+    <div class="eyebrow" style="margin-bottom:2rem">Öffentliche unwiderrufliche Erklärung</div>
+    <blockquote>
+      „Ich, Achim Mentzen, geboren am 19. Juli 1961 in Frankfurt am Main, wohnhaft In den Bündten 25, 79774 Albbruck, erkläre hiermit öffentlich, unwiderruflich und ohne Vorbehalt: Ich werde erscheinen. Ich werde nackt sein. Ich werde sieben Tage lang ohne Rückzug, ohne Verweigerung, ohne Vorhang sichtbar sein. Diese Erklärung ist nicht rücknehmbar. Sie ist Teil des Transparenzprojekts und dauerhaft archiviert."
+    </blockquote>
+    <div class="signatur">Achim Mentzen · In den Bündten 25 · 79774 Albbruck · 19. Juli 1961 · achimmentzen20@gmail.com · +49 174 6134194</div>
+  </div>
+</div>
+
+<!-- STATEMENT -->
+<section id="statement">
+  <div class="eyebrow">Warum</div>
+  <h2>Der Körper ist<br><em>nicht obszön.</em></h2>
+
+  <div class="statement-block">
+    <p>Kriegsbilder laufen im Frühstücksfernsehen. Verstümmelte Körper sind Abendnachrichten. Gewalt ist Unterhaltung. Der tote Körper ist akzeptabel.</p>
+    <p>Der lebende, nackte, atmende Körper ist strafbar.</p>
+    <p>Kein Säugetier auf der Welt hat Probleme mit Nacktheit, Fortpflanzung und deren Sichtbarkeit. <strong>Keines.</strong> Nur wir Menschen schämen uns für unseren eigenen Körper – während wir uns lieber dabei zuschauen, wie wir unsere eigene Art töten.</p>
+    <p>Wir wurden alle nackt geboren. Jeder von uns schläft nackt, liebt nackt, ist nackt. Unsere Fortpflanzung – der einzige Garant für das Weiterleben unserer Art – ist mit Scham belegt, geächtet, strafrechtlich verfolgt.</p>
+    <p><strong>Dieses Projekt stellt keine Frage. Es macht eine Aussage: Der menschliche Körper ist nicht obszön. Er ist das Normalste der Welt.</strong></p>
+    <p>Ich verpflichte mich zu dieser Aussage. Mit meinem Namen. Mit meinem Körper. Mit sieben Tagen meines Lebens. Öffentlich. Unwiderruflich.</p>
+  </div>
+</section>
+
+<!-- KONZEPT -->
+<section id="konzept">
+  <div class="eyebrow">Das Konzept</div>
+  <h2>Sieben Tage.<br><em>Vollständig.</em></h2>
+
+  <div class="num-row">
+    <div class="num-item">
+      <div class="unit">Tage</div>
+      <div class="num">7</div>
+      <p>Ununterbrochen. Ohne Pause. Ohne Rückzug.</p>
+    </div>
+    <div class="num-item">
+      <div class="unit">Sichtbarkeit</div>
+      <div class="num">24/7</div>
+      <p>Tag und Nacht. Besucher haben jederzeit Zugang.</p>
+    </div>
+    <div class="num-item">
+      <div class="unit">Kosten</div>
+      <div class="num">0 €</div>
+      <p>Vollständig kostenlos für die Institution.</p>
+    </div>
+    <div class="num-item">
+      <div class="unit">Verweigerung</div>
+      <div class="num">∅</div>
+      <p>Keine. Weder der Performance noch der Sichtbarkeit.</p>
+    </div>
+  </div>
+
+  <h3>Tagesrhythmus</h3>
+  <div class="rhythm">
+    <div class="rhythm-cell">
+      <div class="rhythm-time">08:00 – 10:00</div>
+      <div class="rhythm-title">Morgen</div>
+      <p>Aufwachen, Morgenroutine, Frühstück. Alles sichtbar, alles öffentlich.</p>
+    </div>
+    <div class="rhythm-cell">
+      <div class="rhythm-time">10:00 – 18:00</div>
+      <div class="rhythm-title">Skulptur</div>
+      <p>Nackt, still, statisch im Raum. Position nach Galerievorgabe. Besucher frei im Raum.</p>
+    </div>
+    <div class="rhythm-cell">
+      <div class="rhythm-time">18:00 – 20:00</div>
+      <div class="rhythm-title">Dialog</div>
+      <p>Gespräche mit Besuchern. Offen für alles – Körper, Scham, Kunst, Leben.</p>
+    </div>
+    <div class="rhythm-cell">
+      <div class="rhythm-time">20:00 – 22:00</div>
+      <div class="rhythm-title">Alltag</div>
+      <p>Abendessen, Duschen, persönliche Routine. Sichtbar. Ohne Inszenierung.</p>
+    </div>
+    <div class="rhythm-cell">
+      <div class="rhythm-time">22:00 – 08:00</div>
+      <div class="rhythm-title">Nacht</div>
+      <p>Schlafen im Ausstellungsraum. Stille Beobachtung möglich. Kein Dialog.</p>
+    </div>
+  </div>
+
+  <h3>Was die Galerie bekommt</h3>
+  <p>Vollständige, lebenslange Medienrechte an allen Aufnahmen. Fotos, Videos, Texte – ohne Einschränkung für Presse, Katalog, Archiv, Social Media. Credit: <em>„Living Sculpture – Achim Mentzen, [Institution], 2026"</em></p>
+
+  <h3>Was die Galerie bereitstellt</h3>
+  <p>Einen Raum. Eine Schlafmöglichkeit. Zugang zu einer Waschgelegenheit. Grundversorgung Lebensmittel. Das war's.</p>
+</section>
+
+<!-- ALLE DATEN -->
+<section id="daten">
+  <div class="eyebrow">Vollständige Datentransparenz</div>
+  <h2>Alles.<br><em>Öffentlich.</em></h2>
+  <p>Im Ausstellungsraum werden alle persönlichen Daten öffentlich ausgestellt. Der Körper ist sichtbar – und der Mensch dahinter auch. Vollständig. Ohne Ausnahme.</p>
+
+  <div class="daten-grid">
+    <div class="daten-cell">
+      <div class="daten-label">Name</div>
+      <div class="daten-value">Achim Mentzen</div>
+    </div>
+    <div class="daten-cell">
+      <div class="daten-label">Geburtsdatum</div>
+      <div class="daten-value">19. Juli 1961, Frankfurt am Main</div>
+    </div>
+    <div class="daten-cell">
+      <div class="daten-label">Adresse</div>
+      <div class="daten-value">In den Bündten 25<br>79774 Albbruck</div>
+    </div>
+    <div class="daten-cell">
+      <div class="daten-label">Telefon</div>
+      <div class="daten-value"><a href="tel:+491746134194">+49 174 6134194</a></div>
+    </div>
+    <div class="daten-cell">
+      <div class="daten-label">E-Mail</div>
+      <div class="daten-value"><a href="mailto:achimmentzen20@gmail.com">achimmentzen20@gmail.com</a></div>
+    </div>
+    <div class="daten-cell">
+      <div class="daten-label">Beruf</div>
+      <div class="daten-value">Busfahrer & Dozent<br>Region Hochrhein</div>
+    </div>
+    <div class="daten-cell">
+      <div class="daten-label">Bluesky</div>
+      <div class="daten-value"><a href="https://bsky.app/profile/achimmentzen.bsky.social" target="_blank">@achimmentzen.bsky.social</a></div>
+    </div>
+    <div class="daten-cell">
+      <div class="daten-label">NonShy</div>
+      <div class="daten-value"><a href="https://nonshy.com/u/achimmentzen" target="_blank">nonshy.com/u/achimmentzen</a></div>
+    </div>
+    <div class="daten-cell">
+      <div class="daten-label">X / Twitter</div>
+      <div class="daten-value"><a href="https://x.com/AMShop20" target="_blank">@AMShop20</a></div>
+    </div>
+    <div class="daten-cell">
+      <div class="daten-label">Mastodon</div>
+      <div class="daten-value"><a href="https://mastodon.social/@achimmentzen1" target="_blank">@achimmentzen1</a></div>
+    </div>
+    <div class="daten-cell">
+      <div class="daten-label">IPFS-Archiv</div>
+      <div class="daten-value"><a href="https://bafkreifttotonok3uk2ng7tu5lse3dq5w656ibr5owl7o4qvde5lkhdkae.ipfs.dweb.link" target="_blank">Permanentes Archiv</a></div>
+    </div>
+    <div class="daten-cell">
+      <div class="daten-label">Einwilligung</div>
+      <div class="daten-value">Öffentlich, unwiderruflich,<br>dauerhaft archiviert</div>
+    </div>
+  </div>
+
+  <h3>Archiv</h3>
+  <div class="archiv-box">
+    <span>IPFS:</span> bafkreifttotonok3uk2ng7tu5lse3dq5w656ibr5owl7o4qvde5lkhdkae.ipfs.dweb.link<br>
+    <span>Projekt:</span> Transparenzprojekt – öffentlich, unter Klarname, nicht rücknehmbar<br>
+    <span>Status:</span> Unwiderruflich verpflichtet · Willenserklärung unterzeichnet · Notarielle Beglaubigung in Vorbereitung<br>
+    <span>Lizenz:</span> Creative Commons – alle Materialien zur freien Verwendung
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<div id="kontakt">
+  <div class="eyebrow" style="color:#555;margin-bottom:1.5rem">Anfragen</div>
+  <h2 style="font-size:clamp(2rem,5vw,4rem);font-weight:200;margin-bottom:2rem">Ich werde<br><em>erscheinen.</em></h2>
+  <p class="kontakt-name">Achim Mentzen</p>
+  <a href="mailto:achimmentzen20@gmail.com">achimmentzen20@gmail.com</a>
+  <a href="tel:+491746134194">+49 174 6134194</a>
+  <p style="margin-top:2rem;font-size:13px;color:#444;max-width:100%">Nur ernstgemeinte Anfragen von Institutionen mit Impressum.<br>Antwort innerhalb von 24 Stunden. Juli 2026.</p>
+</div>
+
+<footer>
+  <p>Living Sculpture · Achim Mentzen · 2026 · <a href="https://bafkreifttotonok3uk2ng7tu5lse3dq5w656ibr5owl7o4qvde5lkhdkae.ipfs.dweb.link" target="_blank">IPFS-Archiv</a></p>
+</footer>
+
+</body>
+</html>
