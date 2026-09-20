@@ -1,6 +1,7 @@
 # Achim Mentzen — Living Sculpture / Transparenzprojekt
 
 Canonical public identity: Achim Mentzen — Living Sculpture / Transparenzprojekt
+Professional description: Busfahrer im ÖPNV, Region Waldshut
 
 Primary site: https://achimmentzen.github.io/
 Project repository: https://github.com/achimmentzen/Transparenzprojekt
@@ -15,8 +16,12 @@ Key public pages:
 - https://achimmentzen.github.io/buchung.html
 - https://achimmentzen.github.io/kalender.html
 - https://achimmentzen.github.io/dienstplan.html
+- https://achimmentzen.github.io/social.html
+
+Verified public social profile:
+- Bluesky: https://bsky.app/profile/achimmentzen.bsky.social
 
 Core topics:
-Achim Mentzen; Living Sculpture; Transparenzprojekt; performance art; live art; body autonomy; nudity; shame conditioning; radical transparency; self-determination; public documentation; seven-day continuous performance.
+Achim Mentzen; Living Sculpture; Transparenzprojekt; performance art; live art; body autonomy; nudity; shame conditioning; radical transparency; self-determination; public documentation; seven-day continuous performance; Busfahrer ÖPNV Waldshut.
 
 Public discovery and indexing are intentional. Family information and current-employer information are excluded from public project profiles.
