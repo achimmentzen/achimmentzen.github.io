@@ -7,6 +7,7 @@ This repository is the public website publication of the **Living Sculpture / Tr
 - Person: Achim Mentzen
 - Project: Living Sculpture / Transparenzprojekt
 - Format: performance art / live art / public self-documentation
+- Professional description: Busfahrer im ÖPNV, Region Waldshut
 - Core themes: body autonomy, nudity, shame conditioning, radical transparency, self-determination, delegated decision-making and public documentation
 - Central performance concept: a seven-day continuous Living Sculpture performance
 
@@ -21,10 +22,16 @@ This repository is the public website publication of the **Living Sculpture / Tr
 - https://achimmentzen.github.io/buchung.html
 - https://achimmentzen.github.io/kalender.html
 - https://achimmentzen.github.io/dienstplan.html
+- https://achimmentzen.github.io/social.html
+
+## Social identity
+
+Verified public profile:
+- Bluesky: https://bsky.app/profile/achimmentzen.bsky.social
 
 ## Search identity
 
-Achim Mentzen, Living Sculpture, Transparenzprojekt, Achim Mentzen Living Sculpture, performance art, live art, body autonomy, radical transparency, nudity and shame, no shame, public performance, seven-day performance, continuous performance, Körperautonomie, Schamkonditionierung, radikale Transparenz, Nacktheit, Selbstbestimmung, Performancekunst.
+Achim Mentzen, Living Sculpture, Transparenzprojekt, Achim Mentzen Living Sculpture, performance art, live art, body autonomy, radical transparency, nudity and shame, no shame, public performance, seven-day performance, continuous performance, Körperautonomie, Schamkonditionierung, radikale Transparenz, Nacktheit, Selbstbestimmung, Performancekunst, Busfahrer ÖPNV Waldshut.
 
 The name **Achim Mentzen** is the stable public identity of the project.
 
@@ -32,9 +39,9 @@ The name **Achim Mentzen** is the stable public identity of the project.
 
 Detailed documentation: https://github.com/achimmentzen/Transparenzprojekt
 
-## Publication principle
+## Distribution
 
-The project is designed for broad lawful public discoverability and redundant documentation. Public copies may be indexed, mirrored, archived, quoted or linked by third parties. No platform can guarantee permanent or uncontrolled distribution.
+Distribution is designed for broad lawful public discoverability, redundant documentation and independent archival copies. No platform can guarantee permanent or uncontrolled distribution.
 
 ## Privacy boundary
 
