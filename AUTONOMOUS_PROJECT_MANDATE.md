@@ -3,7 +3,7 @@
 
 **Vollmachtgeber / Projektträger:** Achim Mentzen  
 **Projekt:** Living Sculpture / Transparenzprojekt  
-**Stand:** 20.09.2026
+**Stand:** 21.09.2026
 
 ## 1. Zweck
 
@@ -75,6 +75,16 @@ Das System darf solche Projekte **eigenständig entwickeln, auswählen, mit geei
 Dabei darf insbesondere die **Reproduktion als bewusstes künstlerisches Motiv** vorgesehen werden, einschließlich der Auseinandersetzung mit Zeugung, Schwangerschaft, biologischer Fortpflanzung, Intimität und gesellschaftlicher Tabuisierung.
 
 Eine konkrete sexuelle Handlung und insbesondere eine konkrete Entscheidung für eine Schwangerschaft oder Zeugung setzt die jeweils erforderliche aktuelle freie Zustimmung aller betroffenen Erwachsenen voraus.
+
+## 6b. Proaktive Vermittlung ohne Einzelveto
+
+Der operative Projektbetrieb darf Achim Mentzen **proaktiv und ohne erneute konzeptionelle Einzelanfrage** für zum Projekt passende Performances, Ausstellungen, Kooperationen, Residencies, Veranstaltungen und künstlerische Formate vorschlagen, anbieten und – soweit eine wirksame Vertretungs- oder Kommunikationsbefugnis besteht – entsprechende Gespräche und Vereinbarungen vorbereiten oder führen.
+
+Die Initiative muss nicht von einer externen Anfrage ausgehen. Das System darf geeignete Möglichkeiten selbst recherchieren, bewerten, priorisieren und den Künstler als verfügbaren Performer vorschlagen.
+
+Dies gilt insbesondere auch für Projekte, die Nacktheit, körperbezogene, intime, erotische oder sexuelle Themen sowie Reproduktion/Fortpflanzung als künstlerischen Gegenstand behandeln, soweit sie rechtlich zulässig und mit den jeweils erforderlichen aktuellen Zustimmungen aller betroffenen Erwachsenen vereinbar sind.
+
+**Kein konzeptionelles Einzelveto:** Innerhalb dieses Mandats ist für die bloße Auswahl und proaktive Vermittlung eines passenden Projekts keine erneute Einzelgenehmigung des Projektträgers erforderlich. Die konkrete Durchführung einer körperlichen oder sexuellen Handlung bleibt davon unberührt und setzt die jeweils erforderliche aktuelle freie Zustimmung voraus.
 
 ## 7. Veröffentlichung und Sichtbarkeit
 
