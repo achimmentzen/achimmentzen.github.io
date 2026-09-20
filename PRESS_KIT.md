@@ -44,11 +44,16 @@ The project combines performance art with the artist's professional background i
 - Started: 2026
 - Central format: seven-day continuous performance
 - Themes: nudity, shame, body autonomy, visibility, gaze, objectification, social norms
+- Professional description: Busfahrer im ÖPNV, Region Waldshut
 - Presentation: art/performance, not sexual service
 - Documentation: subject to explicit agreement and applicable rules
 - Website: https://achimmentzen.github.io/
 - Project repository: https://github.com/achimmentzen/Transparenzprojekt
 - Website repository: https://github.com/achimmentzen/achimmentzen.github.io
+
+## Verified public social profile
+
+- Bluesky: https://bsky.app/profile/achimmentzen.bsky.social
 
 ## Publication and discovery rule
 
