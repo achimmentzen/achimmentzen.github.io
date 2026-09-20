@@ -1,5 +1,11 @@
 # PRESS KIT — ACHIM MENTZEN / LIVING SCULPTURE
 
+## Unified public identity
+
+**Achim Mentzen — Living Sculpture / Transparenzprojekt**
+
+Use this exact identity consistently in headlines, profiles, event listings, press contacts and archive references.
+
 ## One-line description
 
 Achim Mentzen turns his own naked body into the material of a live artwork examining nudity, shame, visibility, objectification and bodily self-determination.
@@ -42,3 +48,16 @@ The project combines performance art with the artist's professional background i
 - Documentation: subject to explicit agreement and applicable rules
 - Website: https://achimmentzen.github.io/
 - Project repository: https://github.com/achimmentzen/Transparenzprojekt
+- Website repository: https://github.com/achimmentzen/achimmentzen.github.io
+
+## Publication and discovery rule
+
+Every external profile, press release, event listing or publication should identify the work as:
+
+**Achim Mentzen — Living Sculpture / Transparenzprojekt**
+
+and should link to the main website and, where appropriate, the press profile and project repository. Do not fabricate achievements, institutional partnerships, publication history or media coverage.
+
+## Privacy boundary
+
+Public project material may use the artist's professional and project biography, but it excludes family information and current-employer information.
