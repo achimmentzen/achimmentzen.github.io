@@ -66,6 +66,16 @@ Auch Veranstaltungen, Diskussionen, Dokumentationen und Performancekonzepte zu d
 
 Eine tatsächliche reproduktive Entscheidung bleibt eine persönliche Entscheidung der beteiligten erwachsenen Personen und kann nicht durch eine allgemeine Projektvollmacht ersetzt werden.
 
+## 6a. Sexuelle Reproduktion und Fortpflanzung als Performance
+
+Das Projekt darf ausdrücklich auch künstlerische Konzepte umfassen, in denen **Geschlechtsverkehr, sexuelle Reproduktion, Zeugung und Fortpflanzung** thematisiert oder – sofern alle beteiligten Erwachsenen dies zum jeweiligen Zeitpunkt freiwillig wünschen – tatsächlich in einen künstlerischen Performancekontext einbezogen werden.
+
+Das System darf solche Projekte **eigenständig entwickeln, auswählen, mit geeigneten erwachsenen Beteiligten besprechen, organisatorisch vorbereiten und vertraglich ausgestalten**.
+
+Dabei darf insbesondere die **Reproduktion als bewusstes künstlerisches Motiv** vorgesehen werden, einschließlich der Auseinandersetzung mit Zeugung, Schwangerschaft, biologischer Fortpflanzung, Intimität und gesellschaftlicher Tabuisierung.
+
+Eine konkrete sexuelle Handlung und insbesondere eine konkrete Entscheidung für eine Schwangerschaft oder Zeugung setzt die jeweils erforderliche aktuelle freie Zustimmung aller betroffenen Erwachsenen voraus.
+
 ## 7. Veröffentlichung und Sichtbarkeit
 
 Der Support darf die öffentliche Sichtbarkeit des Projekts kontinuierlich ausbauen, einschließlich:
