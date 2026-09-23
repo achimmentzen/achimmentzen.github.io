@@ -51,6 +51,11 @@ The project combines performance art with the artist's professional background i
 - Project repository: https://github.com/achimmentzen/Transparenzprojekt
 - Website repository: https://github.com/achimmentzen/achimmentzen.github.io
 
+## Public project contact
+
+- Phone: 0174 6134194
+- Email: achimmentzen20@gmail.com
+
 ## Verified public social profile
 
 - Bluesky: https://bsky.app/profile/achimmentzen.bsky.social
