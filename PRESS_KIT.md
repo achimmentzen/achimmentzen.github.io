@@ -71,3 +71,17 @@ and should link to the main website and, where appropriate, the press profile an
 ## Privacy boundary
 
 Public project material may use the artist's professional and project biography, but it excludes family information and current-employer information.
+
+
+## Anbieter und Qualifikationen
+
+**Achim Mentzen**  
+In den Buendten 25  
+79774 Albbruck, Deutschland  
+
+Telefon: 0174 6134194  
+E-Mail: achimmentzen20@gmail.com
+
+Berufliche Qualifikationen: **Speditionskaufmann (IHK)** · **Fachkaufmann für Marketing (IHK)**
+
+Vollständiges Impressum: [impressum.html](impressum.html)
