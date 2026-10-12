@@ -16,9 +16,7 @@ This repository is the public website publication of the **Living Sculpture / Tr
 - https://achimmentzen.github.io/
 - https://achimmentzen.github.io/performances.html
 - https://achimmentzen.github.io/presse.html
-- https://achimmentzen.github.io/autonomie.html
 - https://achimmentzen.github.io/no-shame.html
-- https://achimmentzen.github.io/sexuelle-offenheit.html
 - https://achimmentzen.github.io/buchung.html
 - https://achimmentzen.github.io/kalender.html
 - https://achimmentzen.github.io/dienstplan.html

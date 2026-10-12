@@ -26,9 +26,7 @@ See DISCOVERY_INDEX.md for the complete public discovery map.
 
 - performances.html
 - presse.html
-- autonomie.html
 - no-shame.html
-- sexuelle-offenheit.html
 - buchung.html
 - kalender.html
 - dienstplan.html
