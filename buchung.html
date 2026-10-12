@@ -48,7 +48,7 @@ document.getElementById('bookingForm').addEventListener('submit',function(e){
  const href='mailto:achimmentzen20@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
  const result=document.getElementById('result');
  result.style.display='block';
- result.innerHTML=`<strong>Anfrage ist vorbereitet.</strong><p>Deine E-Mail-App kann jetzt die vollständige Anfrage öffnen.</p><a class="btn" href="${href}">E-Mail öffnen</a>`;
+ result.innerHTML=`<strong>Fast geschafft – bitte jetzt die E-Mail absenden.</strong><p>Deine E-Mail-App öffnet die vollständige Anfrage. Sobald sie gesendet ist, gilt: <strong>Passt der Termin in meinen Dienstplan, ist deine Anfrage meine verbindliche Zusage.</strong> Der Termin erscheint innerhalb von 12 Stunden im öffentlichen Kalender – das ist deine Bestätigung. Erscheint er nicht, passt der Termin nicht, und ich melde mich mit einem Alternativvorschlag.</p><a class="btn" href="${href}">E-Mail öffnen und senden</a> <a class="btn secondary" href="kalender.html">Zum Kalender</a>`;
 });
 </script>
 </body>
