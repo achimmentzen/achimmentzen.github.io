@@ -85,3 +85,8 @@ E-Mail: achimmentzen20@gmail.com
 Berufliche Qualifikationen: **Speditionskaufmann (IHK)** · **Fachkaufmann für Marketing (IHK)**
 
 Vollständiges Impressum: [impressum.html](impressum.html)
+
+
+## Orgasmusmodul · 80 Minuten
+
+„Fremdbestimmter Orgasmus“ ist ein eigenständiges, 80-minütiges Erwachsenenmodul innerhalb der Ausstellung „Living Sculpture“. Es untersucht das Spannungsfeld zwischen äußerer Regie, Körperwahrnehmung, Intimität, Sichtbarkeit und Selbstbestimmung. Ablauf, mögliche Anleitung, Publikum und Dokumentation werden vorab konkret vereinbart. Der Begriff beschreibt das künstlerische Thema, nicht einen Verzicht auf persönliche Autonomie. Jede konkrete intime Handlung setzt aktuelle ausdrückliche Zustimmung voraus; jede beteiligte Person kann pausieren oder beenden. Ein Orgasmus wird nicht garantiert.
