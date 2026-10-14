@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://achimmentzen.github.io/sitemap.xml
