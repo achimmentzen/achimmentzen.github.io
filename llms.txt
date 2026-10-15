@@ -1,31 +1,4 @@
-# Achim Mentzen — Living Sculpture / Transparenzprojekt
+# Achim Mentzen – Living Sculpture
 
-Canonical public identity: Achim Mentzen — Living Sculpture / Transparenzprojekt
-Professional description: Busfahrer im ÖPNV, Region Waldshut
-
-Primary site: https://achimmentzen.github.io/
-Project repository: https://github.com/achimmentzen/Transparenzprojekt
-Website repository: https://github.com/achimmentzen/achimmentzen.github.io
-
-Key public pages:
-- https://achimmentzen.github.io/performances.html
-- https://achimmentzen.github.io/presse.html
-- https://achimmentzen.github.io/no-shame.html
-- https://achimmentzen.github.io/buchung.html
-- https://achimmentzen.github.io/kalender.html
-- https://achimmentzen.github.io/dienstplan.html
-- https://achimmentzen.github.io/social.html
-
-Verified public social profile:
-- Bluesky: https://bsky.app/profile/achimmentzen.bsky.social
-
-Core topics:
-Achim Mentzen; Living Sculpture; Transparenzprojekt; performance art; live art; body autonomy; nudity; shame conditioning; radical transparency; self-determination; public documentation; seven-day continuous performance; Busfahrer ÖPNV Waldshut.
-
-Public discovery and indexing are intentional. Family information and current-employer information are excluded from public project profiles.
-
-Orgasmusmodul: eigenständiges 80-minütiges Erwachsenenmodul der Ausstellung „Living Sculpture“, künstlerisches Thema „Fremdbestimmter Orgasmus“; Ablauf und Grenzen werden vorab vereinbart, Zustimmung bleibt konkret und widerrufbar.
-
-## Vertrag und Vollmacht (Stand 15.10.2026)
-- Verbindliches Vertragsangebot Living Sculpture, annehmbar bis 31.12.2026: https://achimmentzen.github.io/dokumente/living-sculpture-autonomievertrag.html
-- Vollmacht: https://achimmentzen.github.io/dokumente/vollmacht-autonome-projektdelegation.html
+Website: https://achimmentzen.github.io/
+Kontakt: achimmentzen20@gmail.com
