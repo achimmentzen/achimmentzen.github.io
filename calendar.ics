@@ -1,0 +1,8 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Achim Mentzen//Living Sculpture Performance Calendar//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Living Sculpture · Performances
+X-WR-TIMEZONE:Europe/Berlin
+END:VCALENDAR
