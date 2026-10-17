@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<title>Booking Architecture – Achim Mentzen · Living Sculpture</title>
+<meta name="description" content="Technische Spezifikation für ein automatisiertes Anfrage und Terminverfahren des Living Sculpture /Transparenzprojekts. Ziel Das System soll Anfragen struk">
+<meta name="author" content="Achim Mentzen">
+<link rel="canonical" href="https://achimmentzen.github.io/dokumente/buchung-readme.html">
+<meta name="theme-color" content="#111111">
+<style>:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#111;color:#eee;line-height:1.65}nav{position:sticky;top:0;z-index:10;background:rgba(17,17,17,.97);border-bottom:1px solid #333;padding:12px 18px}nav .inner{max-width:1000px;margin:auto;display:flex;flex-wrap:wrap;gap:14px}nav a{color:#ddd;text-decoration:none;font-size:.9rem}main{max-width:820px;margin:auto;padding:50px 22px 80px}h1{font-size:clamp(2.2rem,7vw,4.2rem);line-height:1.04;margin:0 0 18px}h2{margin-top:44px}.lead{font-size:1.25rem;color:#ccc}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:20px}.card{padding:20px;border:1px solid #444;border-radius:14px;background:#181818}.card b{display:block;font-size:1.3rem;margin-bottom:4px}.small{color:#aaa;font-size:.92rem}.rule{padding:22px;border:1px solid #777;border-radius:14px;background:#181818;margin-top:20px}.cta{display:inline-block;margin-top:18px;padding:14px 22px;border-radius:12px;background:#eee;color:#111;font-weight:700;text-decoration:none}ul{padding-left:1.2em}a{color:#ddd}table{border-collapse:collapse;width:100%;margin:16px 0}td,th{border:1px solid #444;padding:8px;text-align:left;vertical-align:top}code,pre{background:#1d1d1d;border-radius:6px}pre{padding:12px;overflow-x:auto}blockquote{border-left:3px solid #666;margin:0;padding-left:16px;color:#ccc}img{max-width:100%}</style>
+</head>
+<body>
+<div style="background:#1b1b1b;border-bottom:1px solid #333;color:#bbb;font:13px/1.5 system-ui,sans-serif;padding:8px 16px;text-align:center">Künstlerisches Forschungsprojekt über Körper, Scham und Autonomie · Nur für Erwachsene · Keine expliziten Inhalte</div>
+<nav><div class="inner"><a href="../index.html"><strong>Achim Mentzen · Living Sculpture</strong></a><a href="./index.html">Dokumente</a><a href="../scham.html">Wem gehört die Scham?</a><a href="../performances.html">Performances</a><a href="../gastgeber.html">Gastgeber gesucht</a></div></nav>
+<main>
+<h1>Booking Architecture</h1>
+<p>Technische Spezifikation für ein automatisiertes Anfrage- und Terminverfahren des Living-Sculpture-/Transparenzprojekts.</p>
+<h2>Ziel</h2>
+<p>Das System soll Anfragen strukturiert entgegennehmen, Vollständigkeit und Plausibilität prüfen, einen Double-Opt-in durchführen und – soweit die festgelegten Regeln erfüllt sind – einen Termin organisatorisch bestätigen.</p>
+<p>Die öffentliche technische Dokumentation verwendet bewusst neutrale Begriffe. Konkrete persönliche oder intime Angaben gehören weder in das Repository noch in öffentliche Logs.</p>
+<h2>Angebotsklassen</h2>
+<ol>
+<li><strong>Performance / Beobachtung</strong> – Teilnahme oder Besuch ohne vereinbarten Körperkontakt.</li>
+<li><strong>Körperbezogener Termin</strong> – nur innerhalb eines vorher beschriebenen und ausdrücklich bestätigten Rahmens.</li>
+<li><strong>Individuell vereinbarter/intimer Rahmen</strong> – gesonderte Anfrage; niemals automatische Zusage.</li>
+</ol>
+<p>Die genaue Beschreibung eines Termins wird nur im geschützten Buchungssystem gespeichert.</p>
+<h2>Ablauf</h2>
+<p>REQUESTED → DOUBLE_OPT_IN_PENDING → CONFIRMED</p>
+<p>Mögliche Alternativzustände:</p>
+<p>REJECTED · EXPIRED · DUPLICATE · CANCELLED · WITHDRAWN · MANUAL_REVIEW</p>
+<h2>Verbindliche technische Regeln</h2>
+<ul>
+<li>Mindestalter: 18 Jahre.</li>
+<li>Eine Anfrage wird erst nach erfolgreichem Double-Opt-in weiterverarbeitet.</li>
+<li>Jede konkrete Einwilligung bleibt widerrufbar.</li>
+<li>Eine frühere Zustimmung oder eine Projektdelegation ersetzt keine aktuelle Zustimmung zu einer konkreten Handlung.</li>
+<li>Individuelle/intime Anfragen gehen immer in MANUAL_REVIEW.</li>
+<li>Automatisierung darf keine Zustimmung einer anderen Person ersetzen.</li>
+<li>Dubletten und offensichtlich missbräuchliche Anfragen werden zurückgehalten.</li>
+<li>Kalender- und E-Mail-Texte bleiben neutral und enthalten keine sensiblen Details.</li>
+<li>Keine Zugangsdaten, Tokens oder personenbezogenen Buchungsdaten im Git-Repository.</li>
+</ul>
+<h2>Empfohlene technische Umsetzung</h2>
+<p>Frontend/Formular → n8n Webhook → Validierung → Dubletten-/Plausibilitätsprüfung → Double-Opt-in → Regelprüfung → Kalenderprüfung → Bestätigung oder MANUAL_REVIEW.</p>
+<p>Für produktiven Betrieb sollten zusätzlich Rate-Limiting und CAPTCHA bzw. ein vergleichbarer Missbrauchsschutz vorgeschaltet werden.</p>
+<p class="small" style="margin-top:48px"><a href="./index.html">← Alle Dokumente</a> · <a href="../index.html">Living Sculpture</a></p>
+</main>
+</body>
+</html>
