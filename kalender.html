@@ -41,5 +41,5 @@ const list=(Array.isArray(data.availability)?data.availability:[]).filter(w=>(w.
 av.innerHTML=list.length?list.map(w=>{const d=new Date(w.start).toLocaleDateString('de-DE',{weekday:'short',day:'numeric',month:'long'});return `<div class="slot"><b>${d}</b> · ${w.label}</div>`}).join(''):'<div class="empty">Derzeit sind keine freien Zeitfenster veröffentlicht.</div>';
 }).catch(()=>{document.getElementById('events').innerHTML='<div class="empty">Der Kalender konnte gerade nicht geladen werden.</div>';});
 </script>
-</body>
+<a href="en/kalender.html" lang="en" style="position:fixed;top:12px;right:12px;z-index:99999;background:#111;color:#f2f2f2;border:1px solid #c8a96e;padding:6px 12px;border-radius:999px;font:600 13px/1.2 system-ui,-apple-system,Arial,sans-serif;text-decoration:none;letter-spacing:.04em" class="lang-switch">EN · English</a></body>
 </html>
