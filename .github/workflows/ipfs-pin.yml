@@ -1,0 +1,58 @@
+# Legt bei jeder Änderung den aktuellen Stand der Website auf IPFS
+# und pinnt ihn bei mehreren Diensten ("Gezeigtes bleibt gezeigt").
+# Benötigte Secrets (Settings → Secrets and variables → Actions):
+#   PINATA_JWT                         – Pinata API-Key (JWT)
+#   FILEBASE_KEY, FILEBASE_SECRET,
+#   FILEBASE_BUCKET                    – Filebase IPFS-Bucket + Zugangsschlüssel
+# Fehlt ein Secret, wird dieser Dienst einfach übersprungen.
+name: IPFS pinnen
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  pin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Website-Stand vorbereiten
+        run: |
+          mkdir -p /tmp/site
+          rsync -a --exclude '.git' --exclude '.github' ./ /tmp/site/
+
+      - name: CAR-Datei erzeugen (CID berechnen)
+        run: |
+          npm install -g ipfs-car@1
+          ipfs-car pack /tmp/site --output /tmp/site.car
+          CID=$(ipfs-car roots /tmp/site.car | head -1)
+          echo "CID=$CID" >> "$GITHUB_ENV"
+          echo "### IPFS-CID: \`$CID\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "https://ipfs.io/ipfs/$CID/" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Pinata
+        env:
+          PINATA_JWT: ${{ secrets.PINATA_JWT }}
+        run: |
+          if [ -z "$PINATA_JWT" ]; then echo "Pinata übersprungen (kein Secret)"; exit 0; fi
+          curl -fsS -X POST https://uploads.pinata.cloud/v3/files \
+            -H "Authorization: Bearer $PINATA_JWT" \
+            -F "file=@/tmp/site.car" \
+            -F "network=public" \
+            -F "car=true" \
+            -F "name=achimmentzen-site-${GITHUB_SHA::7}"
+          echo "- Pinata: gepinnt" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Filebase
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.FILEBASE_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.FILEBASE_SECRET }}
+          BUCKET: ${{ secrets.FILEBASE_BUCKET }}
+        run: |
+          if [ -z "$AWS_ACCESS_KEY_ID" ] || [ -z "$BUCKET" ]; then echo "Filebase übersprungen (kein Secret)"; exit 0; fi
+          aws --endpoint-url https://s3.filebase.com s3 cp /tmp/site.car \
+            "s3://$BUCKET/achimmentzen-site-${GITHUB_SHA::7}.car" \
+            --metadata import=car
+          echo "- Filebase: gepinnt" >> "$GITHUB_STEP_SUMMARY"
