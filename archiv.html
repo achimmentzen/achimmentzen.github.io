@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Archiv · Achim Mentzen – Living Sculpture / Transparenzprojekt</title>
+<meta name="description" content="Dauerhaftes IPFS-Archiv aller veröffentlichten Stände: Gezeigtes bleibt gezeigt.">
+<link rel="canonical" href="https://achimmentzen.github.io/archiv.html">
+<meta name="robots" content="index,follow"><meta name="author" content="Achim Mentzen">
+<style>body{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;background:#060606;color:#eee;line-height:1.7;max-width:850px;margin:auto;padding:4rem 1rem}a{color:#c8a96e;word-break:break-all}h1,h2{font-weight:300}.box{border:1px solid #222;background:#0b0b0b;padding:1.25rem;margin:1rem 0}.eyebrow{text-transform:uppercase;letter-spacing:.25em;font-size:.7rem;color:#c8a96e}.cid{font:12px/1.4 ui-monospace,monospace;color:#999;word-break:break-all}.meta{color:#888;font-size:.85rem}</style></head>
+<body>
+<div style="background:#1b1b1b;border-bottom:1px solid #333;color:#bbb;font:13px/1.5 system-ui,sans-serif;padding:8px 16px;text-align:center">Nur für Erwachsene (18+) · Keine expliziten Inhalte</div>
+<a href="index.html">← Living Sculpture</a>
+<div class="eyebrow">Gezeigtes bleibt gezeigt</div>
+<h1>Archiv</h1>
+<div class="box"><p><strong>Was ich gezeigt habe, bleibt gezeigt. Ich nehme es nicht zurück. Der Zugang zu meiner Person entscheidet sich trotzdem jedes Mal neu.</strong></p>
+<p>Jeder veröffentlichte Stand dieser Website wird automatisch auf IPFS gelegt und bei mehreren unabhängigen Diensten gepinnt. Alle Inhalte von und über Achim Mentzen stehen unter <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a>, soweit rechtlich erlaubt, mit Klarnamen. Bilder nur für Erwachsene.</p>
+<p class="meta">Neue Inhalte erscheinen bei manchen Gateways erst nach einiger Zeit. Fällt ein Gateway aus, funktioniert derselbe CID über ein anderes.</p></div>
+<div id="liste"><p class="meta">Archiv wird geladen …</p></div>
+<p><a href="dokumente/project-rules.html">Projektregeln</a> · <a href="impressum.html">Impressum</a></p>
+<footer style="margin-top:3rem;border-top:1px solid #222;padding-top:1.5rem;color:#555">Achim Mentzen · Living Sculpture · Transparenzprojekt · 2026</footer>
+<script>
+const gw=["https://ipfs.io/ipfs/","https://dweb.link/ipfs/","https://gateway.pinata.cloud/ipfs/"];
+fetch("archiv.json",{cache:"no-store"}).then(r=>r.json()).then(list=>{
+  const el=document.getElementById("liste");el.innerHTML="";
+  list.slice().reverse().forEach(e=>{
+    const d=document.createElement("div");d.className="box";
+    const p=e.pfad?e.cid+"/"+e.pfad:e.cid+"/";
+    d.innerHTML="<h2>"+e.titel+"</h2><div class='meta'>"+e.datum+(e.commit?" · Commit "+e.commit:"")+(e.dienste&&e.dienste.length?" · gepinnt bei: "+e.dienste.join(", "):"")+"</div><div class='cid'>"+e.cid+"</div><p>"+gw.map((g,i)=>"<a href='"+g+p+"'>Gateway "+(i+1)+"</a>").join(" · ")+"</p>";
+    el.appendChild(d);
+  });
+}).catch(()=>{document.getElementById("liste").innerHTML="<p class='meta'>Archivliste konnte nicht geladen werden: <a href='archiv.json'>archiv.json</a></p>";});
+</script>
+</body></html>

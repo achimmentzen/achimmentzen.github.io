@@ -12,8 +12,12 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   pin:
+    if: "!contains(github.event.head_commit.message, '[archiv]')"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,6 +26,7 @@ jobs:
         run: |
           mkdir -p /tmp/site
           rsync -a --exclude '.git' --exclude '.github' ./ /tmp/site/
+          echo "SERVICES=" >> "$GITHUB_ENV"
 
       - name: CAR-Datei erzeugen (CID berechnen)
         run: |
@@ -44,6 +49,7 @@ jobs:
             -F "car=true" \
             -F "name=achimmentzen-site-${GITHUB_SHA::7}"
           echo "- Pinata: gepinnt" >> "$GITHUB_STEP_SUMMARY"
+          echo "SERVICES=${SERVICES}Pinata," >> "$GITHUB_ENV"
 
       - name: Filebase
         env:
@@ -56,3 +62,26 @@ jobs:
             "s3://$BUCKET/achimmentzen-site-${GITHUB_SHA::7}.car" \
             --metadata import=car
           echo "- Filebase: gepinnt" >> "$GITHUB_STEP_SUMMARY"
+          echo "SERVICES=${SERVICES}Filebase," >> "$GITHUB_ENV"
+
+      - name: Übersicht (archiv.json) aktualisieren
+        if: env.SERVICES != ''
+        run: |
+          python3 - <<'PY'
+          import json, os, datetime
+          d = json.load(open('archiv.json'))
+          d.append({
+            "datum": datetime.date.today().isoformat(),
+            "titel": "Website-Stand",
+            "cid": os.environ["CID"],
+            "pfad": "",
+            "commit": os.environ["GITHUB_SHA"][:7],
+            "dienste": [x for x in os.environ["SERVICES"].split(",") if x],
+          })
+          json.dump(d, open('archiv.json', 'w'), ensure_ascii=False, indent=2)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add archiv.json
+          git commit -m "[archiv] IPFS-Stand $CID"
+          git push
