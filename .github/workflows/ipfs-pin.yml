@@ -34,6 +34,10 @@ jobs:
             git push origin HEAD:main
           fi
 
+      - name: Suchmaschinen benachrichtigen (IndexNow)
+        continue-on-error: true
+        run: python3 tools/indexnow.py
+
       - name: Website-Stand vorbereiten
         run: |
           mkdir -p /tmp/site
