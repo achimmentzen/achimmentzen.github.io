@@ -71,7 +71,7 @@ for page in PAGES:
         return f'href="#" data-enc="{enc}"'
     html = attr.sub(rep, html)
     html = ipfs.sub("", html)
-    SUF = " · achimmentzen20@gmail.com · +49 174 6134194 · https://achimmentzen.github.io"
+    SUF = " · achimmentzen20@gmail.com · +49 174 6134194 · https://achimmentzen.github.io · Lebenslauf: https://achimmentzen.github.io/lebenslauf.html"
     def _alt(m):
         t = m.group(0)
         if "data-enc" not in t or "gmail.com" in t:
