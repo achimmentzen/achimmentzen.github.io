@@ -71,6 +71,18 @@ for page in PAGES:
         return f'href="#" data-enc="{enc}"'
     html = attr.sub(rep, html)
     html = ipfs.sub("", html)
+    SUF = " · achimmentzen20@gmail.com · +49 174 6134194 · https://achimmentzen.github.io"
+    def _alt(m):
+        t = m.group(0)
+        if "data-enc" not in t or "gmail.com" in t:
+            return t
+        def r(a):
+            v = a.group(1)
+            if not v.startswith("Achim Mentzen"):
+                v = "Achim Mentzen – " + v
+            return 'alt="' + v + SUF + '"'
+        return re.sub(r'alt="([^"]*)"', r, t)
+    html = re.sub(r"<img [^>]*>", _alt, html)
     if 'id="galcrypt"' not in html and "data-enc=" in html:
         html = html.replace("</body>", (JS % KEY_HEX) + "</body>", 1)
     if html != orig:
