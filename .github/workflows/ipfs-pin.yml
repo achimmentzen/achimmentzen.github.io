@@ -22,6 +22,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Galeriebilder verschlüsseln (Bild nur nach Altersabfrage sichtbar)
+        run: |
+          pip install --quiet cryptography
+          python3 tools/galerie_crypt.py
+          if ! git diff --cached --quiet; then
+            git config user.name "Claude"
+            git config user.email "noreply@anthropic.com"
+            git commit -m "Galeriebilder verschlüsselt (automatisch)"
+            git push origin HEAD:main
+          fi
+
       - name: Website-Stand vorbereiten
         run: |
           mkdir -p /tmp/site

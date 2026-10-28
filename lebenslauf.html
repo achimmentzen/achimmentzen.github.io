@@ -66,7 +66,7 @@
 <h2>Aktmodell</h2>
 <p>Im Rahmen des Transparenzprojekts stehe ich unter meinem vollen Namen kostenlos als Aktmodell zur Verfügung (Aktzeichnen, Aktmalerei; rund 30 Einsätze an Volkshochschulen, u. a. Nürnberg, Fürth, Freiburg). Die Fotos stehen unter CC BY 4.0, Namensnennung „Achim Mentzen“. Alle Bilder in der <a href="galerie/">Aktgalerie</a>.</p>
 <div id="akt-gate" class="box"><p><strong>Altershinweis:</strong> Dieser Abschnitt enthält künstlerische Aktfotografie (Nacktheit, keine sexuellen Handlungen). Nur für Personen ab 18 Jahren.</p><button type="button" id="akt-ok" style="background:#c8a96e;color:#060606;border:0;padding:.6rem 1.2rem;cursor:pointer">Ich bin 18 – Bilder zeigen</button></div>
-<div id="akt-bilder" class="akt" hidden><figure><a href="galerie/achim-mentzen-akt-01-front.jpg"><img src="galerie/achim-mentzen-akt-01-front.jpg" alt="Achim Mentzen, Aktmodell – Stehend, frontal" loading="lazy"></a><figcaption>Stehend, frontal</figcaption></figure><figure><a href="galerie/achim-mentzen-akt-02-seite.jpg"><img src="galerie/achim-mentzen-akt-02-seite.jpg" alt="Achim Mentzen, Aktmodell – Stehend, Seitenansicht" loading="lazy"></a><figcaption>Stehend, Seitenansicht</figcaption></figure><figure><a href="galerie/achim-mentzen-akt-03-ruecken.jpg"><img src="galerie/achim-mentzen-akt-03-ruecken.jpg" alt="Achim Mentzen, Aktmodell – Stehend, Rückenansicht" loading="lazy"></a><figcaption>Stehend, Rückenansicht</figcaption></figure><figure><a href="galerie/achim-mentzen-akt-05-sitzend.jpg"><img src="galerie/achim-mentzen-akt-05-sitzend.jpg" alt="Achim Mentzen, Aktmodell – Sitzend" loading="lazy"></a><figcaption>Sitzend</figcaption></figure></div>
+<div id="akt-bilder" class="akt" hidden><figure><a href="#" data-enc="galerie/enc/achim-mentzen-akt-01-front.jpg.bin"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-enc="galerie/enc/achim-mentzen-akt-01-front.jpg.bin" alt="Achim Mentzen, Aktmodell – Stehend, frontal" loading="lazy"></a><figcaption>Stehend, frontal</figcaption></figure><figure><a href="#" data-enc="galerie/enc/achim-mentzen-akt-02-seite.jpg.bin"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-enc="galerie/enc/achim-mentzen-akt-02-seite.jpg.bin" alt="Achim Mentzen, Aktmodell – Stehend, Seitenansicht" loading="lazy"></a><figcaption>Stehend, Seitenansicht</figcaption></figure><figure><a href="#" data-enc="galerie/enc/achim-mentzen-akt-03-ruecken.jpg.bin"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-enc="galerie/enc/achim-mentzen-akt-03-ruecken.jpg.bin" alt="Achim Mentzen, Aktmodell – Stehend, Rückenansicht" loading="lazy"></a><figcaption>Stehend, Rückenansicht</figcaption></figure><figure><a href="#" data-enc="galerie/enc/achim-mentzen-akt-05-sitzend.jpg.bin"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-enc="galerie/enc/achim-mentzen-akt-05-sitzend.jpg.bin" alt="Achim Mentzen, Aktmodell – Sitzend" loading="lazy"></a><figcaption>Sitzend</figcaption></figure></div>
 <script>(function(){function show(){document.getElementById('akt-gate').hidden=true;document.getElementById('akt-bilder').hidden=false;}var ok=false;try{ok=localStorage.getItem('age18')==='1'}catch(e){}if(ok)show();document.getElementById('akt-ok').addEventListener('click',function(){try{localStorage.setItem('age18','1')}catch(e){}show();});})();</script>
 
 <h2>Ergänzung 2026</h2>
@@ -76,4 +76,16 @@
 
 <p><a href="index.html">Zur Hauptseite</a> · <a href="archiv.html">Archiv</a> · <a href="impressum.html">Impressum</a></p>
 <footer style="margin-top:3rem;border-top:1px solid #222;padding-top:1.5rem;color:#555">Achim Mentzen · Living Sculpture · Transparenzprojekt · 2026</footer>
-</body></html>
+<script id="galcrypt">(function(){var K='a8b5efd2e30f40fec8b105f034c98e496324db6eb05436a4dac58374b655210b',done=false;
+function hx(h){var a=new Uint8Array(h.length/2);for(var i=0;i<a.length;i++)a[i]=parseInt(h.substr(i*2,2),16);return a}
+function mime(u){return /\.png\.bin$/.test(u)?'image/png':/\.webp\.bin$/.test(u)?'image/webp':'image/jpeg'}
+function ok(){try{return localStorage.getItem('age18')==='1'}catch(e){return false}}
+function run(){if(done||!ok()||!window.crypto||!crypto.subtle)return;done=true;
+crypto.subtle.importKey('raw',hx(K),'AES-GCM',false,['decrypt']).then(function(k){
+var cache={};document.querySelectorAll('[data-enc]').forEach(function(el){var u=el.getAttribute('data-enc');
+if(!cache[u])cache[u]=fetch(u).then(function(r){return r.arrayBuffer()}).then(function(b){
+return crypto.subtle.decrypt({name:'AES-GCM',iv:new Uint8Array(b,0,12)},k,new Uint8Array(b,12))}).then(function(p){
+return URL.createObjectURL(new Blob([p],{type:mime(u)}))});
+cache[u].then(function(url){if(el.tagName==='IMG')el.src=url;else{el.href=url;el.target='_blank'}})})})}
+document.addEventListener('click',function(){setTimeout(run,0)},true);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();})();</script></body></html>
