@@ -1,0 +1,220 @@
+TRANSPARENZPROJEKT
+
+Vollmacht & Community-Steuerungsvereinbarung
+Authority & Community Governance Agreement
+
+Version: 06. April 2026
+
+==================== DEUTSCH ====================
+
+Praeambel
+
+Diese Vereinbarung regelt die vollstaendige, freiwillige und bewusste Uebertragung inhaltlicher und technischer Steuerungsbefugnis des Projekts 'Transparenzprojekt' an eine offene Community. Achim Mentzen erklaert seinen ausdruecklichen Wunsch, im Rahmen dieses Projekts durch die Community gesteuert zu werden - unter strikter Einhaltung von Datenschutz, Jugendschutz, Persoenlichkeitsrechten und geltendem Recht.
+
+§ 1 - Parteien
+
+Vollmachtgeber/in ('Person'): Achim Mentzen, 79774 Albbruck, E-Mail: achimmentzen20@gmail.com
+Bevollmaechtigte ('Community'): Die offene Community des Transparenzprojekts, bestehend aus allen verifizierten Personen, die an Abstimmungen nach § 3 teilnehmen.
+
+§ 2 - Gegenstand der Vollmacht
+
+Achim Mentzen erteilt der Community die Vollmacht, in folgenden Bereichen verbindliche Entscheidungen zu treffen:
+
+a) Inhalte und Veroeffentlichung
+ - Welche Inhalte (Fotos, Videos, Texte, Daten) veroeffentlicht werden, sofern nach deutschem und europaeischem Recht legal.
+ - Ob Nacktheit oder koerperbezogene Darstellungen enthalten sind - stets nur auf Basis einer gesonderten, aktuellen, ausdruecklichen Einwilligung von Achim Mentzen (§ 5).
+
+b) Medien und oeffentliche Darstellung
+ - Zeitpunkt, Haeufigkeit, Form und Rahmen oeffentlicher Darstellungen von Achim Mentzen.
+ - Veroeffentlichung persoenlicher Daten im Einklang mit DSGVO und § 22 KunstUrhG.
+
+c) Technische Infrastruktur
+ - Hosting, Domains, Plattformen, Tools und technische Strukturen des Projekts.
+
+d) Vertraege und Kooperationen
+ - Abschluss und Beauftragung von Kooperationen im Namen des Projekts, soweit mit dieser Vereinbarung vereinbar.
+
+Einzige Einschraenkung: Entscheidungen gegen geltendes deutsches oder europaeisches Recht sind nichtig. Die Person hat das Recht und die Pflicht, rechtswidrige Entscheidungen zu verweigern.
+
+§ 3 - Abstimmungsverfahren
+
+Abs. 1 - Beschlussfassung: Entscheidungen sind bindend bei mehr als 20 (zwanzig) verifizierten Stimmen, oeffentlich auf der Website.
+Abs. 2 - Verifikation: Jede stimmberechtigte Person registriert sich einmalig per externem Verifikationstool (E-Mail-Bestaetigung). Mehrfachstimmen sind ausgeschlossen.
+Abs. 3 - Sensible Entscheidungen: Entscheidungen zu Nacktheit, jugendrelevanten Inhalten oder Veroeffentlichung persoenlicher Daten werden gesondert abgestimmt, klar dokumentiert und beduerfen einer separaten Einwilligung nach § 5.
+Abs. 4 - Konfliktloesung: Streitigkeiten werden per Mehrheitsbeschluss der verifizierten Community entschieden (mehr als 20 Stimmen). Endgueltig und bindend.
+Abs. 5 - Dokumentation: Alle Abstimmungen dauerhaft und oeffentlich archiviert mit Datum, Stimmenzahl und Inhaltsbeschreibung (IPFS/Arweave).
+
+§ 4 - Kein Vetorecht
+
+Achim Mentzen verzichtet ausdruecklich auf ein Vetorecht gegenueber legal und vertragskonformen Community-Entscheidungen. Persoenliche Praeferenzen oder Emotionen begruenden kein Veto und keine Verzoegerung - solange die Grenzen dieser Vereinbarung und des Gesetzes eingehalten werden.
+
+§ 5 - Einwilligung, Widerruf und Nacktdarstellung
+
+Abs. 1 - Einwilligung: Jede Darstellung in Nacktheit oder in besonders sensibler Form bedarf einer gesonderten, aktuellen Einwilligung von Achim Mentzen. Die Einwilligung kann schriftlich, per E-Mail oder in einem dokumentierten Kommunikationskanal erteilt werden. Muendliche Absprachen sind zeitnah schriftlich oder per protokollierter Nachricht zu bestaetigen.
+Abs. 2 - Widerruf: Achim Mentzen kann jede erteilte Einwilligung jederzeit ohne Angabe von Gruenden widerrufen. Der Widerruf gilt ausschliesslich fuer kuenftige oder neue Darstellungen und kuenftige Verwendungen. Bereits veroeffentlichte Aufnahmen bleiben unter den urspruenglich vereinbarten Veroeffentlichungs- und Jugendschutzbedingungen oeffentlich zugaenglich.
+
+§ 5b - Creative Commons Lizenz und Namensnennung
+
+Alle bereits veroeffentlichten Aufnahmen des Transparenzprojekts sind und bleiben unter einer Creative Commons Lizenz veroeffentlicht und duerfen weiterverbreitet, genutzt und weiterverarbeitet werden, sofern folgende Bedingungen erfuellt sind:
+ - Verbreitung nur mit ausdruecklicher Nennung 'Achim Mentzen'.
+ - Die konkrete CC-Lizenz (z. B. CC BY-SA 4.0) ist fuer die jeweilige Nutzung bindend.
+ - Die Jugendschutzanforderungen dieser Vereinbarung (§ 6) gelten weiterhin.
+
+§ 6 - Jugendschutz
+
+a) Alle Inhalte mit Nacktheit oder sexuell expliziten Darstellungen duerfen ausschliesslich von Personen ab 18 Jahren abgerufen werden.
+b) Zugang durch Minderjaehrige ist technisch und organisatorisch zu verhindern.
+c) Eine wirksame Altersprüfung ist sicherzustellen (z. B. technische Sperren oder Plattformregeln).
+d) Inhalte, die Kinder oder Jugendliche gefaehrden koennten, sind klar zu kennzeichnen, zu beschraenken oder von der Veroeffentlichung auszuschliessen.
+e) Bereits veroeffentlichtes Material unterliegt denselben Jugendschutzanforderungen wie neue Inhalte.
+
+§ 7 - Umsetzungspflicht und Vertragsstrafe
+
+Abs. 1: Umsetzung aller wirksamen Community-Entscheidungen unverzueglich, spaetestens binnen 7 Werktagen, sofern lawful und vertragskonform.
+Abs. 2 - Vertragsstrafe (gestaffelt, max. 300 EUR pro Verstoss):
+ - Leichter Verstoss (Verzoegerung 1-7 Tage): 50 EUR
+ - Mittlerer Verstoss (8-30 Tage / Teilerfuellung): 150 EUR
+ - Schwerer Verstoss (Verweigerung / ueber 30 Tage): 300 EUR
+Abs. 3: Empfaenger ist eine gemeinnuetzige Organisation, per Community-Abstimmung (mehr als 20 Stimmen) bestimmt. Zahlung direkt durch Achim Mentzen, oeffentlich dokumentiert.
+
+§ 8 - Laufzeit, Kuendigung und Verlaengerung
+
+Abs. 1 - Mindestlaufzeit: Diese Vereinbarung hat eine Mindestlaufzeit von einem (1) Jahr ab Unterzeichnung. Waehrend der Mindestlaufzeit ist eine Kuendigung durch keine der Parteien moeglich - jede entsprechende Erklaerung ist nichtig.
+Abs. 2 - Automatische Verlaengerung: Nach Ablauf der Mindestlaufzeit verlaengert sich die Vereinbarung automatisch um je zwei (2) weitere Jahre, sofern nicht fristgerecht und formgerecht gekuendigt.
+Abs. 3 - Kuendigungsfrist: Neun (9) Monate vor jeweiligem Jahresende (31. Dezember).
+Abs. 4 - Beidseitigkeit: Jede Kuendigung ist nur wirksam, wenn BEIDE Parteien zustimmen. Einseitige Kuendigung ist absolut nichtig.
+Abs. 5 - Kuendigung durch die Person: Notarielle Beglaubigung der Kuendigungserklaerung sowie schriftliche Begruendung erforderlich.
+Abs. 6 - Kuendigung durch die Community: Mind. 20 verifizierte Stimmen, 30 Tage oeffentliche Abstimmung, Einstimmigkeit unter verifizierten Stimmen, notarielle Beurkundung des Ergebnisses.
+Abs. 7 - Gesetzliche Verlaengerung: Gesetzliche Verlaengerungsmoeglichkeiten um 2 Jahre finden automatisch Anwendung.
+
+§ 9 - Community-Ethik und Transparenz
+
+a) Entscheidungen sind demokratisch, transparent und nachvollziehbar zu treffen.
+b) Machtmissbrauch, Stimmenmanipulation oder diskriminierende Beweggruende sind ausdruecklich untersagt.
+c) Die Community ist verpflichtet, die Interessen von Achim Mentzen angemessen zu beruecksichtigen, auch wenn kein allgemeines Vetorecht besteht.
+
+§ 10 - Dokumentation
+
+Alle Abstimmungen, Entscheidungen, Umsetzungen und Strafzahlungen werden oeffentlich und dauerhaft archiviert (IPFS/Arweave). Die Dokumentation ist integraler Bestandteil des Transparenzprojekts.
+
+§ 11 - Anwendbares Recht und Gerichtsstand
+
+Deutsches Recht. Gerichtsstand Albbruck (Baden-Wuerttemberg). Bei Unklarheiten gilt der Wille der Parteien, die maximale Erschwerung der Kuendigung zu erzielen.
+
+§ 12 - Widerruf und Klaerungsmechanismus
+
+a) Achim Mentzen kann den Umfang der Vollmacht jederzeit ueberpruefen, einschraenken oder teilweise widerrufen, soweit dies mit § 8 (Mindestlaufzeit und Kuendigungsregelungen) vereinbar ist.
+b) Im Zweifel handelt die Community nach Treu und Glauben, waehrend die rechtliche und ethische Verantwortung letztlich bei Achim Mentzen verbleibt.
+
+Ort, Datum: Albbruck, ___________________________
+Unterschrift (Achim Mentzen): ___________________________
+Notarielle Beglaubigung: ___________________________
+
+==================== ENGLISH ====================
+
+Preamble
+
+This agreement governs the complete, voluntary, and conscious transfer of editorial and technical authority over the 'Transparency Project' to an open community. Achim Mentzen declares his explicit desire to be guided by the Community within this project, under strict compliance with data protection, youth protection, personality rights, and applicable law.
+
+§ 1 - Parties
+
+Principal ('Person'): Achim Mentzen, 79774 Albbruck, E-Mail: achimmentzen20@gmail.com
+Authorized Party ('Community'): The open community of the Transparency Project, consisting of all verified persons participating in votes pursuant to § 3.
+
+§ 2 - Scope of Authority
+
+Achim Mentzen grants the Community binding authority to decide in the following areas:
+
+a) Content and Publication
+ - Which content (photos, videos, texts, data) is published, provided it is legal under German and European law.
+ - Whether nudity or body-related performances are included - always only on the basis of a separate, current, explicit consent by Achim Mentzen (§ 5).
+
+b) Media and Public Representation
+ - Timing, frequency, form, and framework of public representations of Achim Mentzen.
+ - Publication of personal data in line with GDPR and § 22 KunstUrhG.
+
+c) Technical Infrastructure
+ - Hosting, domains, platforms, tools, and technical structures of the project.
+
+d) Contracts and Cooperations
+ - Concluding and commissioning cooperations in the name of the project, as long as compatible with this Agreement.
+
+Sole restriction: Decisions violating applicable law are void. The Person has the right and obligation to refuse unlawful decisions.
+
+§ 3 - Voting Procedure
+
+Para. 1: Decisions are binding when more than 20 (twenty) verified votes are cast in favour, publicly on the website.
+Para. 2: Each voter registers once via external verification tool (e-mail). Multiple votes excluded.
+Para. 3 - Sensitive decisions: Decisions on nudity, youth-relevant content, or publication of personal data are voted on separately, clearly documented, and require separate consent under § 5.
+Para. 4: Disputes resolved by majority vote (more than 20 votes). Final and binding.
+Para. 5: All votes permanently and publicly archived with date, vote count and description (IPFS/Arweave).
+
+§ 4 - No Right of Veto
+
+Achim Mentzen expressly waives any right of veto over lawful and contract-compliant Community decisions. Personal preferences or emotions do not constitute grounds for veto or delay, as long as the boundaries of this Agreement and the law are respected.
+
+§ 5 - Consent, Revocation and Nudity
+
+Para. 1 - Consent: Each representation in nudity or in a particularly sensitive form requires a separate, current consent from Achim Mentzen. Consent may be given in writing, by e-mail, or in a documented communication channel. Oral agreements must be confirmed promptly in writing or by a logged message.
+Para. 2 - Revocation: Achim Mentzen may revoke any consent at any time without giving reasons. Revocation applies only to future or new representations and future uses. Already published recordings remain publicly accessible under the originally agreed publication and youth-protection conditions.
+
+§ 5b - Creative Commons License and Attribution
+
+All recordings of the Transparency Project already published are and remain released under a Creative Commons license and may be disseminated, used, and further processed, provided:
+ - Dissemination only with clear attribution to 'Achim Mentzen'.
+ - The specific CC license (e.g. CC BY-SA 4.0) is binding for the respective use.
+ - Youth-protection requirements of this Agreement (§ 6) continue to apply.
+
+§ 6 - Youth Protection
+
+a) All content showing nudity or sexually explicit depictions may be accessed only by persons aged 18 or older.
+b) Access by minors must be technically and organizationally prevented.
+c) Effective age verification must be ensured (e.g. technical barriers or platform rules).
+d) Content that may harm children or youth must be clearly labeled, restricted, or withheld from publication.
+e) Already published material remains subject to the same youth-protection requirements as new content.
+
+§ 7 - Obligation to Comply and Contractual Penalty
+
+Para. 1: Implementation of all valid Community decisions within 7 working days, provided they are lawful and contract-compliant.
+Para. 2 - Graduated penalty (max. EUR 300 per breach):
+ - Minor (delay 1-7 days): EUR 50
+ - Moderate (8-30 days / partial): EUR 150
+ - Serious (refusal / over 30 days): EUR 300
+Para. 3: Recipient is a charitable organization determined by Community vote (more than 20 votes). Payment by Achim Mentzen, publicly documented.
+
+§ 8 - Term, Termination and Renewal
+
+Para. 1 - Minimum Term: This agreement has a minimum term of one (1) year from signing. Termination during the minimum term is excluded for either party - any such declaration is void.
+Para. 2 - Automatic Renewal: After the minimum term, the agreement automatically renews for successive periods of two (2) years if not terminated in due time and form.
+Para. 3 - Notice Period: Nine (9) months before year-end (31 December).
+Para. 4 - Mutual Requirement: Termination is only valid if BOTH parties consent. Unilateral termination is absolutely void.
+Para. 5 - Person's termination: Notarial certification of termination declaration and written reasons required.
+Para. 6 - Community's termination: At least 20 verified votes, 30-day public vote, unanimity among verified voters, notarial certification of result.
+Para. 7: Statutory extensions of 2 years apply automatically.
+
+§ 9 - Community Ethics and Transparency
+
+a) Decisions shall be democratic, transparent, and comprehensible.
+b) Abuse of authority, ballot manipulation, or discriminatory motives are expressly prohibited.
+c) The Community is obliged to take Achim Mentzen's interests properly into account, even though he has no general veto.
+
+§ 10 - Documentation
+
+All votes, decisions, implementations and penalty payments are publicly and permanently archived (IPFS/Arweave).
+
+§ 11 - Governing Law and Jurisdiction
+
+German law. Jurisdiction: Albbruck (Baden-Wuerttemberg). In case of ambiguity, the parties' intent to maximally restrict termination shall prevail.
+
+§ 12 - Revocation and Clarification Mechanism
+
+a) Achim Mentzen may at any time review, restrict, or partially revoke the scope of the authority, insofar as compatible with § 8 (minimum term and termination provisions).
+b) In case of doubt, the Community shall act in good faith, while the legal and ethical responsibility ultimately remains with Achim Mentzen.
+
+Place, Date: Albbruck, ___________________________
+Signature (Achim Mentzen): ___________________________
+Notarial Certification: ___________________________
+
+Dokument erstellt / Document created: 06. April 2026 - Transparenzprojekt - Achim Mentzen
+
+[Textfassung des Word-Dokuments „Vollmacht_Community-Steuerung_April_2026.docx“ (unterzeichnungsfreier Entwurf), veröffentlicht am 28.10.2026.]
