@@ -26,6 +26,7 @@ jobs:
         run: |
           pip install --quiet cryptography
           python3 tools/galerie_crypt.py
+          python3 tools/sitemap.py
           if ! git diff --cached --quiet; then
             git config user.name "Claude"
             git config user.email "noreply@anthropic.com"
