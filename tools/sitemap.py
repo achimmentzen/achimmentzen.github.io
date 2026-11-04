@@ -15,19 +15,7 @@ for f in sorted(files):
     loc = BASE + (f[:-10] if f.endswith("index.html") else f)
     depth = loc.count("/") - 3
     prio = "1.0" if loc == BASE else ("0.8" if depth <= 1 else "0.6")
-    full = open(f, encoding="utf-8", errors="ignore").read()
-    imgs = ""
-    seen = set()
-    for src, alt in re.findall(r'<img src="([^"]+\.(?:jpe?g|png|webp))"[^>]*?alt="([^"]*)"', full, re.I):
-        if src.startswith(("http", "data:")):
-            continue
-        u = BASE + os.path.normpath(os.path.join(os.path.dirname(f), src)).replace(os.sep, "/")
-        if u in seen:
-            continue
-        seen.add(u)
-        t = alt.split(" · ")[0].replace("&", "&amp;").replace("<", "&lt;")
-        imgs += f"<image:image><image:loc>{u}</image:loc><image:title>{t}</image:title></image:image>"
-    urls.append(f"  <url><loc>{loc}</loc><lastmod>{d}</lastmod><priority>{prio}</priority>{imgs}</url>")
-open("sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' + "\n".join(urls) + "\n</urlset>\n")
+    urls.append(f"  <url><loc>{loc}</loc><lastmod>{d}</lastmod><priority>{prio}</priority></url>")
+open("sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>\n")
 subprocess.run(["git", "add", "sitemap.xml"])
 print(len(urls), "URLs")
