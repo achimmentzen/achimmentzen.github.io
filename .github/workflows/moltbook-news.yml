@@ -1,0 +1,38 @@
+# Holt stündlich alle Moltbook-Posts von achimmentzenagent samt Kommentaren
+# und Antworten in news.json (angezeigt auf news.html).
+# Öffentliche Moltbook-API: kein API-Key, kein Claude-Guthaben nötig.
+name: Moltbook-News
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  discussions: read
+
+concurrency:
+  group: moltbook-news
+  cancel-in-progress: false
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Moltbook abrufen
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/moltbook_news.py
+
+      - name: Speichern
+        run: |
+          if git diff --quiet -- news.json; then echo "Keine neuen Inhalte"; exit 0; fi
+          git config user.name "Claude"
+          git config user.email "noreply@anthropic.com"
+          git add news.json
+          git commit -m "Moltbook-News aktualisiert [archiv]"
+          git pull --rebase origin main
+          git push origin HEAD:main
