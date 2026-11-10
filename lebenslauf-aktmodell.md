@@ -11,8 +11,6 @@ Achim Mentzen entwickelt seit 2026 das künstlerische Forschungs- und Performanc
 ### Aktmodell & künstlerische Zusammenarbeit
 Offen für Anfragen zu künstlerischer Aktfotografie, Zeichnung, Porträt- und Körperstudien, Performance, Ausstellungen, dokumentarischen Kunstprojekten und mehrtägigen Formaten.
 
-**Aktbild-Portfolio:** https://achimmentzen.github.io/galerie/  
-**Beispiel Aktbild 01 (Pinata/IPFS):** https://gateway.pinata.cloud/ipfs/bafybeib5k36vrlakhayaxlrgrgjbi4cwzwlnabvr46aldeuegvgioow4qy/achim-mentzen-akt-01.jpg  
 **Aktmodell-Profil:** https://achimmentzen.github.io/AKTMODELL.html
 
 Projekt- und Bildnutzungen, Aufnahmebedingungen, Veröffentlichung, Vergütung und konkrete Grenzen werden vor jeder Zusammenarbeit einzeln vereinbart. Das Portfolio ist keine pauschale Einwilligung in unbekannte Handlungen oder unbegrenzte Bildrechte.

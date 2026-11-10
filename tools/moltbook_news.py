@@ -22,6 +22,9 @@ BLOCK = [
     r"bündten", r"buendten", r"südbadenbus", r"suedbadenbus", r"\bsbg\b",
     r"db regio", r"deutsche bahn", r"deutschebahn", r"ehefrau", r"meine frau",
     r"his wife", r"tochter", r"daughter", r"\bsohn\b", r"\bson\b",
+    # 10.11.2026: keine expliziten Inhalte und keine Aktbild-Links mehr (Achims Entscheidung)
+    r"orgasm", r"ejakul", r"ejacul", r"masturb", r"erektion", r"erregung", r"sexuelle offenheit",
+    r"sexual openness", r"/galerie", r"akt-0", r"fansly", r"nacktbook", r"/experimental",
 ]
 BLOCK_RE = re.compile("|".join(BLOCK), re.I)
 

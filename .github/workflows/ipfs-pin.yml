@@ -22,15 +22,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Galeriebilder verschlüsseln (Bild nur nach Altersabfrage sichtbar)
+      - name: Sitemap aktualisieren
         run: |
-          pip install --quiet cryptography
-          python3 tools/galerie_crypt.py
           python3 tools/sitemap.py
           if ! git diff --cached --quiet; then
             git config user.name "Claude"
             git config user.email "noreply@anthropic.com"
-            git commit -m "Galeriebilder verschlüsselt (automatisch)"
+            git commit -m "Sitemap aktualisiert (automatisch)"
             git push origin HEAD:main
           fi
 
