@@ -40,6 +40,15 @@ No publication system can guarantee uncontrolled or permanent distribution. Once
 
 ## Log
 
+### 2026-11-11
+- Published the text-only WordPress article **“65 Jahre. Kein Hochglanzkörper. Kein Grund zum Verstecken.”**: https://achimmentzen.wordpress.com/2026/11/11/65-jahre-kein-hochglanzkorper-kein-grund-zum-verstecken/. Subscriber email and automatic Jetpack social sharing were explicitly disabled.
+- Added the artist profile page **profil.html** with the current public identity: Achim Mentzen, 65 (2026), Naturist and Busfahrer im ÖPNV am Hochrhein; no employer or work-schedule details.
+- Added the profile page to the homepage navigation, social/profile cross-links and sitemap.
+- Removed public duty-plan data and private availability windows from the current website feeds. The former duty-plan page now contains a noindex privacy notice; the public calendar contains no personal availability slots.
+- Removed duplicate postal-address blocks from public profile, press, social and manifesto pages. The full postal address remains on the dedicated imprint page; the privacy page points to the imprint.
+- Added a dated archive note explaining privacy and safety exceptions and the limits of removing earlier GitHub history or third-party copies.
+- NacktBook was not updated because no publishing integration was available. LinkedIn and Facebook publishing were blocked by invalid/revoked authorizations; no retry or account changes were made.
+
 ### 2026-09-20
 - Main website connected the project archive and core files from the homepage.
 - Press page expanded into a combined press profile and press-release landing page.
