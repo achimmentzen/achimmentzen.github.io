@@ -25,11 +25,11 @@ See DISCOVERY_INDEX.md for the complete public discovery map.
 ## Public pages
 
 - performances.html
+- profil.html
 - presse.html
 - no-shame.html
 - buchung.html
 - kalender.html
-- dienstplan.html
 
 ## Distribution
 
