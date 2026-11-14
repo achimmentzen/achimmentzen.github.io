@@ -70,7 +70,7 @@ jobs:
           for k,v in [("network","public"),("name",name)]:
               parts.append(f'--{b}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode())
           body=b"".join(parts)+f"--{b}--\r\n".encode()
-          req=urllib.request.Request("https://uploads.pinata.cloud/v3/files",data=body,headers={"Authorization":"Bearer "+os.environ["PINATA_JWT"],"Content-Type":"multipart/form-data; boundary="+b})
+          req=urllib.request.Request("https://uploads.pinata.cloud/v3/files",data=body,headers={"User-Agent":"curl/8.5.0","Authorization":"Bearer "+os.environ["PINATA_JWT"],"Content-Type":"multipart/form-data; boundary="+b})
           try:
               r=urllib.request.urlopen(req,timeout=600); d=json.load(r); print(json.dumps(d)[:800])
           except urllib.error.HTTPError as e:
