@@ -53,22 +53,34 @@ jobs:
           echo "### IPFS-CID: \`$CID\`" >> "$GITHUB_STEP_SUMMARY"
           echo "https://ipfs.io/ipfs/$CID/" >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Pinata
+      - name: Pinata (Ordner-Upload, Gratis-Plan)
         env:
           PINATA_JWT: ${{ secrets.PINATA_JWT }}
         run: |
           if [ -z "$PINATA_JWT" ]; then echo "Pinata übersprungen (kein Secret)"; exit 0; fi
-          ls -la /tmp/site.car
-          CODE=$(curl -sS -o /tmp/pinata.json -w "%{http_code}" -X POST https://uploads.pinata.cloud/v3/files \
-            -H "Authorization: Bearer $PINATA_JWT" \
-            -F "file=@/tmp/site.car" \
-            -F "network=public" \
-            -F "car=true" \
-            -F "name=achimmentzen-site-${GITHUB_SHA::7}")
-          echo "Pinata HTTP $CODE"; head -c 1500 /tmp/pinata.json; echo
-          if [ "${CODE:0:1}" != "2" ]; then exit 1; fi
-          echo "- Pinata: gepinnt" >> "$GITHUB_STEP_SUMMARY"
-          echo "SERVICES=${SERVICES}Pinata," >> "$GITHUB_ENV"
+          python3 - <<'PY'
+          import os, json, mimetypes, urllib.request, uuid
+          root="/tmp/site"; name="achimmentzen-site-"+os.environ["GITHUB_SHA"][:7]
+          b=uuid.uuid4().hex; parts=[]
+          for dp,_,fs in os.walk(root):
+              for f in sorted(fs):
+                  full=os.path.join(dp,f); rel=os.path.relpath(full,root)
+                  ct=mimetypes.guess_type(f)[0] or "application/octet-stream"
+                  parts.append(f'--{b}\r\nContent-Disposition: form-data; name="file"; filename="{name}/{rel}"\r\nContent-Type: {ct}\r\n\r\n'.encode()+open(full,"rb").read()+b"\r\n")
+          for k,v in [("network","public"),("name",name)]:
+              parts.append(f'--{b}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode())
+          body=b"".join(parts)+f"--{b}--\r\n".encode()
+          req=urllib.request.Request("https://uploads.pinata.cloud/v3/files",data=body,headers={"Authorization":"Bearer "+os.environ["PINATA_JWT"],"Content-Type":"multipart/form-data; boundary="+b})
+          try:
+              r=urllib.request.urlopen(req,timeout=600); d=json.load(r); print(json.dumps(d)[:800])
+          except urllib.error.HTTPError as e:
+              print("Pinata HTTP",e.code,e.read()[:800]); raise SystemExit(1)
+          cid=d.get("data",{}).get("cid","")
+          with open(os.environ["GITHUB_ENV"],"a") as g:
+              g.write(f"CID={cid}\nSERVICES=Pinata,\n")
+          with open(os.environ["GITHUB_STEP_SUMMARY"],"a") as g:
+              g.write(f"- Pinata: gepinnt, CID {cid} https://ipfs.io/ipfs/{cid}/\n")
+          PY
 
       - name: Filebase
         env:
