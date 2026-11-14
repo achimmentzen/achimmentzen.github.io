@@ -58,12 +58,15 @@ jobs:
           PINATA_JWT: ${{ secrets.PINATA_JWT }}
         run: |
           if [ -z "$PINATA_JWT" ]; then echo "Pinata übersprungen (kein Secret)"; exit 0; fi
-          curl -fsS -X POST https://uploads.pinata.cloud/v3/files \
+          ls -la /tmp/site.car
+          CODE=$(curl -sS -o /tmp/pinata.json -w "%{http_code}" -X POST https://uploads.pinata.cloud/v3/files \
             -H "Authorization: Bearer $PINATA_JWT" \
             -F "file=@/tmp/site.car" \
             -F "network=public" \
             -F "car=true" \
-            -F "name=achimmentzen-site-${GITHUB_SHA::7}"
+            -F "name=achimmentzen-site-${GITHUB_SHA::7}")
+          echo "Pinata HTTP $CODE"; head -c 1500 /tmp/pinata.json; echo
+          if [ "${CODE:0:1}" != "2" ]; then exit 1; fi
           echo "- Pinata: gepinnt" >> "$GITHUB_STEP_SUMMARY"
           echo "SERVICES=${SERVICES}Pinata," >> "$GITHUB_ENV"
 
