@@ -10,6 +10,8 @@ name: IPFS pinnen
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: "17 2 * * *"   # einmal täglich IPFS-Pinning (spart Pinata-Speicher)
   workflow_dispatch:
 
 permissions:
@@ -38,13 +40,22 @@ jobs:
         continue-on-error: true
         run: python3 tools/indexnow.py
 
+      - name: Pinnen heute nötig?
+        run: |
+          PIN=no
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then PIN=yes; fi
+          if [ "${{ github.event_name }}" = "schedule" ] && [ $(( $(date +%s) - $(git log -1 --format=%ct) )) -lt 90000 ]; then PIN=yes; fi
+          echo "PIN=$PIN" >> "$GITHUB_ENV"; echo "Pinnen: $PIN"
+
       - name: Website-Stand vorbereiten
+        if: env.PIN == 'yes'
         run: |
           mkdir -p /tmp/site
           rsync -a --exclude '.git' --exclude '.github' ./ /tmp/site/
           echo "SERVICES=" >> "$GITHUB_ENV"
 
       - name: CAR-Datei erzeugen (CID berechnen)
+        if: env.PIN == 'yes'
         run: |
           npm install -g ipfs-car@1
           ipfs-car pack /tmp/site --output /tmp/site.car
@@ -54,6 +65,7 @@ jobs:
           echo "https://ipfs.io/ipfs/$CID/" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Pinata (Ordner-Upload, Gratis-Plan)
+        if: env.PIN == 'yes'
         env:
           PINATA_JWT: ${{ secrets.PINATA_JWT }}
         run: |
@@ -90,6 +102,7 @@ jobs:
           PY
 
       - name: Filebase
+        if: env.PIN == 'yes'
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.FILEBASE_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.FILEBASE_SECRET }}
@@ -103,7 +116,7 @@ jobs:
           echo "SERVICES=${SERVICES}Filebase," >> "$GITHUB_ENV"
 
       - name: Übersicht (archiv.json) aktualisieren
-        if: env.SERVICES != ''
+        if: env.PIN == 'yes' && env.SERVICES != ''
         run: |
           python3 - <<'PY'
           import json, os, datetime
