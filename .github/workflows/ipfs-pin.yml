@@ -59,27 +59,34 @@ jobs:
         run: |
           if [ -z "$PINATA_JWT" ]; then echo "Pinata übersprungen (kein Secret)"; exit 0; fi
           python3 - <<'PY'
-          import os, json, mimetypes, urllib.request, uuid
-          root="/tmp/site"; name="achimmentzen-site-"+os.environ["GITHUB_SHA"][:7]
-          b=uuid.uuid4().hex; parts=[]
+          import os, re, json, mimetypes, urllib.request, urllib.error, uuid
+          root="/tmp/site"; sha=os.environ["GITHUB_SHA"][:7]
+          skip=re.compile(r"^(tools/|.*\.md$|wrangler|\.assetsignore|google|803ef)")
+          allf=[]
           for dp,_,fs in os.walk(root):
-              for f in sorted(fs):
-                  full=os.path.join(dp,f); rel=os.path.relpath(full,root)
-                  ct=mimetypes.guess_type(f)[0] or "application/octet-stream"
-                  parts.append(f'--{b}\r\nContent-Disposition: form-data; name="file"; filename="{name}/{rel}"\r\nContent-Type: {ct}\r\n\r\n'.encode()+open(full,"rb").read()+b"\r\n")
-          for k,v in [("network","public"),("name",name)]:
-              parts.append(f'--{b}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode())
-          body=b"".join(parts)+f"--{b}--\r\n".encode()
-          req=urllib.request.Request("https://uploads.pinata.cloud/v3/files",data=body,headers={"User-Agent":"curl/8.5.0","Authorization":"Bearer "+os.environ["PINATA_JWT"],"Content-Type":"multipart/form-data; boundary="+b})
-          try:
-              r=urllib.request.urlopen(req,timeout=600); d=json.load(r); print(json.dumps(d)[:800])
-          except urllib.error.HTTPError as e:
-              print("Pinata HTTP",e.code,e.read()[:800]); raise SystemExit(1)
-          cid=d.get("data",{}).get("cid","")
-          with open(os.environ["GITHUB_ENV"],"a") as g:
-              g.write(f"CID={cid}\nSERVICES=Pinata,\n")
-          with open(os.environ["GITHUB_STEP_SUMMARY"],"a") as g:
-              g.write(f"- Pinata: gepinnt, CID {cid} https://ipfs.io/ipfs/{cid}/\n")
+              for f in fs:
+                  rel=os.path.relpath(os.path.join(dp,f),root)
+                  if not skip.match(rel): allf.append(rel)
+          groups={"site":[f for f in allf if not f.startswith("galerie/")],"galerie":[f for f in allf if f.startswith("galerie/")]}
+          cids={}
+          for g,files in groups.items():
+              name=f"achimmentzen-{g}-{sha}"; b=uuid.uuid4().hex; parts=[]
+              for rel in sorted(files)[:150]:
+                  ct=mimetypes.guess_type(rel)[0] or "application/octet-stream"
+                  parts.append(f'--{b}\r\nContent-Disposition: form-data; name="file"; filename="{name}/{rel}"\r\nContent-Type: {ct}\r\n\r\n'.encode()+open(os.path.join(root,rel),"rb").read()+b"\r\n")
+              for k,v in [("network","public"),("name",name)]:
+                  parts.append(f'--{b}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode())
+              body=b"".join(parts)+f"--{b}--\r\n".encode()
+              req=urllib.request.Request("https://uploads.pinata.cloud/v3/files",data=body,headers={"User-Agent":"curl/8.5.0","Authorization":"Bearer "+os.environ["PINATA_JWT"],"Content-Type":"multipart/form-data; boundary="+b})
+              try:
+                  d=json.load(urllib.request.urlopen(req,timeout=600))
+              except urllib.error.HTTPError as e:
+                  print("Pinata HTTP",e.code,e.read()[:800]); raise SystemExit(1)
+              cids[g]=d.get("data",{}).get("cid",""); print(g,len(files),"Dateien",cids[g])
+          with open(os.environ["GITHUB_ENV"],"a") as f:
+              f.write(f"CID={cids['site']}\nGALERIE_CID={cids['galerie']}\nSERVICES=Pinata,\n")
+          with open(os.environ["GITHUB_STEP_SUMMARY"],"a") as f:
+              for g,c in cids.items(): f.write(f"- Pinata {g}: https://ipfs.io/ipfs/{c}/\n")
           PY
 
       - name: Filebase
@@ -109,6 +116,9 @@ jobs:
             "commit": os.environ["GITHUB_SHA"][:7],
             "dienste": [x for x in os.environ["SERVICES"].split(",") if x],
           })
+          if os.environ.get("GALERIE_CID"):
+              d.append({"datum": datetime.date.today().isoformat(), "titel": "Aktgalerie (verschlüsselt, 18+)",
+                        "cid": os.environ["GALERIE_CID"], "pfad": "", "commit": os.environ["GITHUB_SHA"][:7], "dienste": ["Pinata"]})
           json.dump(d, open('archiv.json', 'w'), ensure_ascii=False, indent=2)
           PY
           git config user.name "github-actions[bot]"
