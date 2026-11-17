@@ -92,5 +92,25 @@
     "dienste": [
       "Pinata"
     ]
+  },
+  {
+    "datum": "2026-11-17",
+    "titel": "Website-Stand",
+    "cid": "bafybeicwk6oiupd52rlk4mbpjmjqrsulelyouljkazsp3yapgzuka64piu",
+    "pfad": "",
+    "commit": "1d320b3",
+    "dienste": [
+      "Pinata"
+    ]
+  },
+  {
+    "datum": "2026-11-17",
+    "titel": "Aktgalerie (verschlüsselt, 18+)",
+    "cid": "bafybeiburkbtq52hblqqvkz5h7oewefqyjqeijxnsfaxpr7zvpzxykhrpu",
+    "pfad": "",
+    "commit": "1d320b3",
+    "dienste": [
+      "Pinata"
+    ]
   }
 ]
